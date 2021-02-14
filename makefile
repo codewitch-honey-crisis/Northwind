@@ -1,2 +1,5 @@
-hello: main.c
-     gcc -o hello main.c -I.
+all: main.c 
+	gcc -g -Wall -o hello main.c
+
+clean: 
+	$(RM) hello
